@@ -1,0 +1,263 @@
+:root{
+    --page-main-color: rgb(190,52,85,100);
+    --background-color: #f0f0f0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body, html{
+    height: 200vh;
+    position: relative;
+}
+
+.top-bar{
+    background-color: var(--page-main-color);
+    color: #fff;
+    padding: 8px 0 13px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.87rem;
+    letter-spacing: 1px;
+}
+
+.fa-truck{
+    margin-right: 15px;
+}
+
+/*-----HEADER-----*/
+
+header{
+    background-color: #fff;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0px;
+    box-shadow: 5px 0px 10px rgb(0, 0, 0, 0.1);
+}
+
+.main-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1420px;
+    padding: 15px 15px 10px 15px;
+    margin: auto;
+    
+}
+.main-menu-section-list{
+    list-style: none;
+    display: flex;
+}
+
+.main-menu-section-list li{
+    margin: 0 15px;
+}
+
+.main-menu-section-list-item
+{
+    cursor: pointer;
+    text-align: center;
+}
+
+.fa-phone, .fa-message, .fa-location-dot, .fa-magnifying-glass, .fa-user, .fa-cart-shopping{
+    font-size: 1.2rem;
+    margin: 0 10px 10px 10px;
+}
+
+.main-menu-section-list-item p
+{
+    font-size: 0.65rem;
+    font-weight: 300;
+}
+
+.logo img{
+    width: 100px;
+}
+
+/*-----NAVIGATION-----*/
+
+.main-menu-nav-list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    list-style: none;
+}
+
+.main-menu-nav-option{
+    padding: 15px 17px;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.main-menu-nav-option:hover{
+    background-color: var(--background-color);
+}
+
+/*-----CONTENT-----*/
+
+
+.main-banner > img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.slider{
+    max-width: 85px;
+    margin: auto;
+    height: 19px;
+    text-align: end;
+}
+
+.slider-dot{
+    display: inline-block;
+    margin-right: 10px;
+    color: lightgray;
+    cursor: pointer;
+}
+
+.slider-dash{
+    display: inline-block;
+    margin-right: 10px;
+    color: #000;
+    cursor: pointer;
+}
+
+.fa-circle{
+    font-size: 0.5rem;
+    margin-right:-5px;
+    vertical-align: 1rem;
+}
+
+/*-----CATEGORY-SLIDER-1-----*/
+
+.categories-v1{
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+.categories-v1-title-list{
+    display: flex;  
+    justify-content: center;
+    list-style: none;
+}
+
+.categories-v1-title-list > li{
+    margin-right: 1rem;
+}
+
+.categories-v1-title{
+    font-size: 1.3rem;
+    padding: 0 0.3rem 0.5rem;
+    cursor: pointer;
+}
+
+.categories-v1-title-choosen{
+    padding-bottom: 0.3rem;
+    border-bottom: 0.2rem solid var(--page-main-color);
+}
+
+.categories-v1-title:hover{
+    padding-bottom: 0.3rem;
+    border-bottom: 0.2rem solid var(--page-main-color);
+}
+
+.categories-v1-option-list
+{
+    margin-top: 15px;
+    display: flex;  
+    list-style: none;
+}
+
+.categories-v1-option{
+    font-size: 1rem;
+    cursor: pointer;
+    width: 13%;
+    margin-right: 0.8rem;
+}
+
+.categories-v1-option > img{
+    border-radius: 50%;
+    width: 100%;
+}
+
+.categories-v1-option > p{
+    text-align: center;
+}
+
+/*-----CATEGORY-SLIDER-2-----*/
+
+.categories-v2{
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    max-width: 1390px;
+    height: 500px;
+    padding: 35px 15px 0px 5px;
+    background-color: var(--background-color);
+    font-size: 1.5rem;
+    color: gray;
+}
+
+/*
+@media (min-width: 1200px)
+.categories {
+    
+}
+*/
+
+.categories-title{
+    display: inline-block;
+    vertical-align: top;
+    padding: 70px 60px 0 40px;
+}
+
+.categories-title p1{
+    display: block;
+    width: 150px;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.categories-title p2{
+    display: block;
+    width: 150px;
+    font-size: 1.35rem;
+    font-style: italic;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.categories-title p3{
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--page-main-color);
+}
+
+.categories-options{
+    height: 400px;
+    display: inline-block;
+}
+
+.categories-option{
+    display: inline-block;
+    width: 250px;
+    margin-left: 25px;
+}
+
+.categories-option img{
+    width: 250px;
+    height: auto;
+}
