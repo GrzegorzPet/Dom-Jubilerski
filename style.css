@@ -1,6 +1,7 @@
 :root{
-    --page-main-color: rgb(190,52,85,100);
-    --background-color: #f0f0f0;
+    --viva-magenta: rgb(190,52,85,100);
+    --hover-background-color: #f0f0f0;
+    --light-gray: #f9f9f9;
 }
 
 *{
@@ -17,7 +18,7 @@ body, html{
 }
 
 .top-bar{
-    background-color: var(--page-main-color);
+    background-color: var(--viva-magenta);
     color: #fff;
     padding: 8px 0 13px;
     text-align: center;
@@ -36,6 +37,7 @@ header{
     background-color: #fff;
     text-transform: uppercase;
     position: sticky;
+    z-index: 1000;
     top: 0px;
     box-shadow: 5px 0px 10px rgb(0, 0, 0, 0.1);
 }
@@ -97,7 +99,7 @@ header{
 }
 
 .main-menu-nav-option:hover{
-    background-color: var(--background-color);
+    background-color: var(--hover-background-color);
 }
 
 /*-----CONTENT-----*/
@@ -161,12 +163,12 @@ header{
 
 .categories-v1-title-choosen{
     padding-bottom: 0.3rem;
-    border-bottom: 0.2rem solid var(--page-main-color);
+    border-bottom: 0.2rem solid var(--viva-magenta);
 }
 
 .categories-v1-title:hover{
     padding-bottom: 0.3rem;
-    border-bottom: 0.2rem solid var(--page-main-color);
+    border-bottom: 0.2rem solid var(--viva-magenta);
 }
 
 .categories-v1-option-list
@@ -192,3 +194,74 @@ header{
     text-align: center;
 }
 
+/*-----HIGHLIGHTED-CATEGORIES-----*/
+
+.highlighted-categories
+{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--light-gray);
+    width: 1380px;
+    aspect-ratio: 5/4;
+    position: relative;
+}
+
+.highlighted-categories-box
+{
+    margin-left: 13%;
+    margin-right: 13%;
+}
+
+.highlighted-categories-premium
+{
+    width: 485px;
+    position: relative;
+    left: 0px;
+}
+
+.highlighted-categories-flowergarden
+{
+    position: relative;
+    width: 490px;
+    right: 0px;
+}
+
+.highlighted-categories-engagement
+{
+    position: relative;
+    width: 490px;
+    right: 0px;
+}
+
+.highlighted-categories-image > img
+{
+    width: 100%;
+}
+
+.highlighted-categories-title-title > p
+{
+    font-size: 2rem;
+}
+
+.highlighted-categories-title-description
+{
+    margin-top: 5px;
+    width: 400px;
+}
+
+.highlighted-categories-title-description > p
+{
+    font-size: 2rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.highlighted-categories-image-title > p
+{
+    font-size: 1.5rem;
+}
+
+.highlighted-categories-image-description > p
+{
+    font-style: italic;
+}
