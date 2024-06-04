@@ -17,6 +17,18 @@ body, html{
     position: relative;
 }
 
+html::-webkit-scrollbar{
+    width: 7px;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: white;
+}
+
 .top-bar{
     background-color: var(--viva-magenta);
     color: #fff;
@@ -196,72 +208,76 @@ header{
 
 /*-----HIGHLIGHTED-CATEGORIES-----*/
 
-.highlighted-categories
-{
+.highlighted-categories{
     margin-left: auto;
     margin-right: auto;
     background-color: var(--light-gray);
-    width: 1380px;
-    aspect-ratio: 5/4;
+    width: 1390px;
+    height: 1084px;
+    padding: 0 180px;
+    margin-top: 70px;
+    box-sizing: border-box;
     position: relative;
 }
 
-.highlighted-categories-box
-{
-    margin-left: 13%;
-    margin-right: 13%;
+.highlighted-categories-boxes{
+    display: flex;
 }
 
-.highlighted-categories-premium
-{
+.highlighted-categories-box{
+    width: 50%;
+}
+
+.highlighted-categories-premium{
+    margin-top: 70px;
     width: 485px;
-    position: relative;
-    left: 0px;
 }
 
-.highlighted-categories-flowergarden
-{
-    position: relative;
+.highlighted-categories-flowergarden, .highlighted-categories-engagement{
     width: 490px;
-    right: 0px;
+    margin-left: 25px;
 }
 
-.highlighted-categories-engagement
-{
-    position: relative;
-    width: 490px;
-    right: 0px;
+.highlighted-categories-flowergarden{
+    margin-top: 150px;
 }
 
-.highlighted-categories-image > img
-{
+.highlighted-categories-engagement{
+    margin-top: 95px;
+}
+
+.highlighted-categories-image > img{
     width: 100%;
 }
 
-.highlighted-categories-title-title > p
-{
-    font-size: 2rem;
+.highlighted-categories-title-title{
+    margin-top: 65px;
 }
 
-.highlighted-categories-title-description
-{
+.highlighted-categories-title-title > p{
+    font-size: 2.2rem;
+}
+
+.highlighted-categories-title-description{
     margin-top: 5px;
     width: 400px;
 }
 
-.highlighted-categories-title-description > p
-{
+.highlighted-categories-title-description > p{
     font-size: 2rem;
     font-weight: 300;
     font-style: italic;
 }
 
-.highlighted-categories-image-title > p
-{
-    font-size: 1.5rem;
+.highlighted-categories-image-title {
+    margin-top: 8px;
 }
 
-.highlighted-categories-image-description > p
-{
+.highlighted-categories-image-title > p{
+    font-size: 1.55rem;
+}
+
+.highlighted-categories-image-description > p{
+    font-size: 0.93rem;
     font-style: italic;
 }
