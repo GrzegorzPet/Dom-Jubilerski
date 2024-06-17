@@ -83,7 +83,7 @@ header{
     margin: 0 10px 10px 10px;
 }
 
-.main-menu-section-list-item p
+.main-menu-section-list-item > p
 {
     font-size: 0.65rem;
     font-weight: 300;
@@ -281,3 +281,87 @@ header{
     font-size: 0.93rem;
     font-style: italic;
 }
+
+/*-----CAROUSEL-RECOMMENDED-----*/
+
+.carousel-recommended{
+    width: 100vw;
+}
+
+.carousel-title{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    z-index : 1;
+}
+
+.carousel-title::before{
+    content: "";
+    position: absolute;
+    left: 15%;
+    bottom: -10px;
+    width: 75%;
+    border-bottom: solid 1px #000;
+}
+
+.carousel-title > p{
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.carousel-list{
+    display: flex;
+}
+
+.carousel-list > li
+{
+    list-style: none;
+    margin-right: 5px;
+}
+
+.carousel-list-object
+{
+    position: relative;
+    width: 16.5vw;
+    aspect-ratio: 1/1;
+}
+
+.carousel-list-object-image > img
+{
+    position: absolute;
+    width: 100%;
+}
+
+.product-carates{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 0.7rem;
+}
+
+.fa-gem{
+    font-size: 0.8rem;
+    margin-left: 0.6rem;
+}
+
+.product-label{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    text-transform: uppercase;
+    padding: 7px 10px;
+    font-weight: 800;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
+.product-label > p{
+    color: #fff;
+    font-size: 0.65rem;
+    font-weight: 600;
+}
+
+
+
