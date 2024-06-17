@@ -285,7 +285,7 @@ header{
 /*-----CAROUSEL-RECOMMENDED-----*/
 
 .carousel-recommended{
-    width: 100vw;
+    width: 99vw;
 }
 
 .carousel-title{
@@ -294,6 +294,7 @@ header{
     margin-right: auto;
     width: fit-content;
     z-index : 1;
+    margin-top: 35px;
 }
 
 .carousel-title::before{
@@ -312,7 +313,13 @@ header{
 }
 
 .carousel-list{
+    margin-top: 25px;
+    margin-left: 10px;
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    padding-bottom: 75px;
+    overflow: hidden;
 }
 
 .carousel-list > li
@@ -324,7 +331,7 @@ header{
 .carousel-list-object
 {
     position: relative;
-    width: 16.5vw;
+    width: 16.1vw;
     aspect-ratio: 1/1;
 }
 
@@ -362,6 +369,22 @@ header{
     font-size: 0.65rem;
     font-weight: 600;
 }
+
+.carousel-list-object-title > p{
+    font-size: 0.86rem;
+    color: #000;
+    position: absolute;
+    top: 16.5vw;
+}
+
+.carousel-list-object-price > p{
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: #000;
+    position: absolute;
+    top: 18.5vw;
+}
+
 
 
 
