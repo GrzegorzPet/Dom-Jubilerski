@@ -285,7 +285,9 @@ header{
 /*-----CAROUSEL-RECOMMENDED-----*/
 
 .carousel-recommended{
-    width: 99vw;
+    width: 98.5vw;
+    margin-left: 15px;
+    margin-bottom: 70px;
 }
 
 .carousel-title{
@@ -314,7 +316,6 @@ header{
 
 .carousel-list{
     margin-top: 25px;
-    margin-left: 10px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: left;
@@ -383,6 +384,18 @@ header{
     color: #000;
     position: absolute;
     top: 18.5vw;
+}
+
+/*-----SECTION-CATEGORY-----*/
+
+.section-category{
+    margin: 50px 15px 0px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-category-banner > img{
+    width: 48vw;
 }
 
 
