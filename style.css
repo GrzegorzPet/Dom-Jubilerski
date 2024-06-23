@@ -282,7 +282,7 @@ header{
     font-style: italic;
 }
 
-/*-----CAROUSEL-RECOMMENDED-----*/
+/*-----CAROUSEL-----*/
 
 .carousel{
     width: 98.5vw;
@@ -329,17 +329,18 @@ header{
     margin-right: 5px;
 }
 
-.carousel-list-object
+.carousel-list-product
 {
     position: relative;
     width: 16.1vw;
     aspect-ratio: 1/1;
 }
 
-.carousel-list-object-image > img
+.carousel-list-product-image > img
 {
     position: absolute;
     width: 100%;
+    border-radius: 5px;
 }
 
 .product-carates{
@@ -371,14 +372,14 @@ header{
     font-weight: 600;
 }
 
-.carousel-list-object-title > p{
+.carousel-list-product-title > p{
     font-size: 0.86rem;
     color: #000;
     position: absolute;
     top: 16.5vw;
 }
 
-.carousel-list-object-price > p{
+.carousel-list-product-price > p{
     font-weight: 500;
     letter-spacing: 0.1rem;
     color: #000;
@@ -396,6 +397,42 @@ header{
 
 .section-category-banner > img{
     width: 48vw;
+}
+
+/*-----CAROUSEL-BLOG-----*/
+
+.carousel-list-blog
+{
+    position: relative;
+    width: 24.8vw;
+    height: 425px;
+}
+
+.carousel-list-blog-image > img
+{
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.carousel-list-blog-title > p{
+    padding: 0 10px;
+    position: absolute;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #000;
+    top: 13vw;
+}
+
+.carousel-list-blog-description > p{
+    padding: 0 10px;
+    position: absolute;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    color: #000;
+    top: 15.5vw;
 }
 
 
