@@ -438,3 +438,75 @@ header{
 
 
 
+/*-----SALON_SECTION-----*/
+
+.salon-section{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    max-width: 1390px;
+    height: 520px;
+    padding: 15px 15px 0px 5px;
+    background-color: var(--light-gray);
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.salon-section-title{
+    display: inline-block;
+    vertical-align: top;
+    padding: 70px 0px 0 40px;
+}
+
+.salon-section-title p1{
+    display: block;
+    width: 220px;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.salon-section-title p2{
+    display: block;
+    width: 160px;
+    font-size: 1.35rem;
+    font-style: italic;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.salon-section-title p3{
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--viva-magenta);
+}
+
+.salon-section-list{
+    height: 400px;
+    display: flex;
+    list-style: none;
+}
+
+.salon-section-list-option{
+    display: inline-block;
+    margin-left: 24px;
+}
+
+.salon-section-list-option img{
+    width: 18vw;
+    height: auto;
+    aspect-ratio: 5/6;
+    object-fit: cover;
+}
+
+.salon-section .slider{
+    padding-top: 20px;
+    padding-left: 280px;
+}
+
